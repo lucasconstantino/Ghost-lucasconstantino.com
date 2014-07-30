@@ -3,7 +3,8 @@
 // When run from command line.
 
 var ghost = require('./core'),
-    errors = require('./core/server/errors');
+    errors = require('./core/server/errors'),
+    lucas  = require('./content/themes/lucas/extend');
 
 ghost().otherwise(function (err) {
     errors.logErrorAndExit(err, err.context, err.help);
