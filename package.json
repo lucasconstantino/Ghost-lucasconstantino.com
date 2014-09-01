@@ -24,6 +24,7 @@
     "main": "./core/index",
     "scripts": {
         "start": "node index",
+        "develop": "nodemon index.js --ignore 'content/themes/lucas/app/*'",
         "test": "./node_modules/.bin/grunt validate --verbose"
     },
     "engines": {
